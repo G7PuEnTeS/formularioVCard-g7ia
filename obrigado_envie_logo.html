@@ -36,17 +36,6 @@
       text-decoration: none;
       animation: shake 1.5s infinite;
     }
-    button.play-sound {
-      margin-top: 25px;
-      background-color: #0077ff;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #00ffff88;
-    }
     @keyframes shake {
       0% { transform: translateX(0); }
       25% { transform: translateX(-5px); }
@@ -54,16 +43,18 @@
       75% { transform: translateX(-5px); }
       100% { transform: translateX(0); }
     }
+    audio {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <h1>Obrigado por adquirir um produto da Psyco_IA</h1>
   <p>Envie sua logo via WhatsApp ou aguarde nosso contato.</p>
   <a class="whatsapp-button" href="https://wa.me/5531999999999" target="_blank">Enviar logo via WhatsApp</a>
-  <button class="play-sound" onclick="document.getElementById('bgm').play()">Ativar Música</button>
-  <audio id="bgm" loop>
+  <audio autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
     Seu navegador não suporta áudio.
-  </audio>
+</audio>
 </body>
 </html>
