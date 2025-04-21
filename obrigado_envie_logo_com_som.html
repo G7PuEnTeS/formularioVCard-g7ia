@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obrigado - Psyco_IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    a.whatsapp-button {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      animation: shake 1.5s infinite;
+    }
+    button.play-sound {
+      margin-top: 25px;
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffff88;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Obrigado por adquirir um produto da Psyco_IA</h1>
+  <p>Envie sua logo via WhatsApp ou aguarde nosso contato.</p>
+  <a class="whatsapp-button" href="https://wa.me/5531999999999" target="_blank">Enviar logo via WhatsApp</a>
+  <button class="play-sound" onclick="document.getElementById('bgm').play()">Ativar Música</button>
+  <audio id="bgm" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+</body>
+</html>
