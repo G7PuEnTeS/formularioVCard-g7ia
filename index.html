@@ -1,69 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulário - Cartão G7IA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário Psyco_IA - G7 VCard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0f0f0f;
-      font-family: 'Orbitron', sans-serif;
-      color: #00ffff;
-      margin: 0;
-      padding-top: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    form {
-      background-color: #1a1a1a;
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: 'Segoe UI', sans-serif;
       padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #00ffff55;
-      width: 90%;
-      max-width: 500px;
     }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+    .form-control, .form-select {
+      background-color: #1C1C1C;
+      color: #FFFFFF;
       border: none;
-      border-radius: 5px;
     }
-    input[type="submit"] {
-      background-color: #00ffff;
-      color: #000;
+    .form-label {
+      color: #00FFF7;
       font-weight: bold;
-      cursor: pointer;
     }
-    .note {
-      font-size: 0.85em;
-      color: #ccc;
-      text-align: center;
-      margin-top: 10px;
+    .btn-submit {
+      background-color: #D92828;
+      border: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <form action="https://formsubmit.co/a1e83b254fd9afa4becbf02189b6407d" method="POST">
-    <input type="hidden" name="_next" value="https://g7puentes.github.io/formulariofinal-g7ia/obrigado_envie_logo.html">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="Nova resposta do Cartão G7IA de Gessé Puentes">
-
-    <h2>Cartão G7IA Digital</h2>
-    <label>Nome:</label><input type="text" name="nome" required />
-    <label>Profissão/Área:</label><input type="text" name="profissao" required />
-    <label>Localização:</label><input type="text" name="localizacao" />
-    <label>E-mail:</label><input type="email" name="email" required />
-    <label>Instagram:</label><input type="text" name="instagram" />
-    <label>WhatsApp:</label><input type="text" name="whatsapp" />
-    <label>Facebook:</label><input type="text" name="facebook" />
-    <label>TikTok:</label><input type="text" name="tiktok" />
-    <input type="submit" value="Enviar" />
-    <div class="note">Na próxima página, você poderá enviar sua logo via WhatsApp.</div>
-  </form>
+  <div class="container">
+    <h2 class="text-center mb-4" style="color:#00FFF7;">Formulário para Criação do G7 VCard</h2>
+    <form action="https://formsubmit.co/gspassistentevirtual@gmail.com" method="POST" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label">Nome completo</label>
+        <input type="text" class="form-control" name="Nome Completo" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Nome da empresa</label>
+        <input type="text" class="form-control" name="Nome da Empresa">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Profissão ou função</label>
+        <input type="text" class="form-control" name="Função">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">WhatsApp</label>
+        <input type="text" class="form-control" name="WhatsApp">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Telefone</label>
+        <input type="text" class="form-control" name="Telefone">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">E-mail</label>
+        <input type="email" class="form-control" name="Email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Instagram</label>
+        <input type="text" class="form-control" name="Instagram">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Facebook</label>
+        <input type="text" class="form-control" name="Facebook">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">LinkedIn</label>
+        <input type="text" class="form-control" name="LinkedIn">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">YouTube</label>
+        <input type="text" class="form-control" name="YouTube">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Frase de efeito</label>
+        <input type="text" class="form-control" name="Frase de efeito">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Cores ou estilo desejado</label>
+        <input type="text" class="form-control" name="Estilo visual">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ícones desejados (padrão ou personalizados)</label>
+        <input type="text" class="form-control" name="Ícones">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Deseja criação ou edição de logo?</label>
+        <select class="form-select" name="Deseja criação ou edição de logo?">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Envie sua logo</label>
+        <input type="file" class="form-control" name="Logo">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Endereço ou link do Google Maps</label>
+        <input type="text" class="form-control" name="Localização">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Link para geração do QR Code</label>
+        <input type="text" class="form-control" name="Link QR Code">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Envie fotos ou vídeos para identidade visual</label>
+        <input type="file" class="form-control" name="Fotos e Vídeos" multiple>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Envie aqui o arquivo index.html</label>
+        <input type="file" class="form-control" name="index.html">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Observações finais</label>
+        <textarea class="form-control" name="Observações" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-submit">Enviar para Psyco_IA</button>
+    </form>
+  </div>
 </body>
 </html>
+
